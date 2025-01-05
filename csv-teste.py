@@ -24,3 +24,13 @@ arquivo_CSV.carregar_csv()
 print(arquivo_CSV.filtrar_por(filtro, limite))
 
 
+arquivo_csv2 = "./exemplo.csv"
+filtro2 = 'estado'
+limite2 = 'DF'
+
+# Criando a instância da classe e carregando o arquivo
+arquivo_csv2 = CsvPorcessor(arquivo_csv2)
+arquivo_CSV.carregar_csv()
+
+# Filtrando os dados e imprimindo o resultado
+print(arquivo_CSV.filtrar_por(filtro2, limite2))
